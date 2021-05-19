@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "lime",
+            "command": "build",
+            "problemMatcher": [
+                "$haxe-absolute",
+                "$haxe",
+                "$haxe-error",
+                "$haxe-trace"
+            ]
+        },
+        {
+            "label": "local server test",
+            "type": "shell",
+            "command": "lime build windows -D skiplogin -D local"
+        }
+    ]
+}
